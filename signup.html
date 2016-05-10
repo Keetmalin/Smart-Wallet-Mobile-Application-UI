@@ -359,17 +359,32 @@
             <input class="validate" id="login-psw-2" type="password"> 
             <label for="login-psw-2">Confirm Password</label>
           </div>
-
-          <a class="waves-effect waves-light btn-large accent-color width-100 m-b-20 animated bouncein delay-4" href="index.html">Signup</a> 
+          <a class="waves-effect waves-light btn-large modal-trigger primary-color width-100 m-b-20" href="#modal1" style="display: none" id="modalButton">Modal simple</a>
+          <a class="waves-effect waves-light btn-large accent-color width-100 m-b-20 animated bouncein delay-4" id="signupButton">Signup</a>
           <span>Have an account? <a class="primary-text" href="login.html">Login</a></span>
+
         </div><!-- End of Main Contents -->
+
+        <!-- Modal Trigger Simple -->
+
       
        
       </div> <!-- End of Page Content -->
 
+      <!-- Simple Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p id="modalText">A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
+
     </div> <!-- End of Page Container -->
-    
-    
+
+
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>   
     <script src="js/jquery.smoothState.min.js"></script> 
@@ -379,5 +394,6 @@
     <script src="js/masonry.min.js"></script>
     <script src="js/chart.min.js"></script>
     <script src="js/functions.js"></script>
+    <script type="text/javascript" src="js/user-events.js"></script>
   </body>
 </html>
