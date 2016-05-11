@@ -327,6 +327,9 @@ blockquote {
 .bg-5 {
     background: url(../img/5.jpg) no-repeat center / cover !important;
 }
+.bg-6 {
+    background: url(../img/6.jpg) no-repeat center / cover !important;
+}
 .bg-9 {
     background: url(../img/9.jpg) no-repeat center / cover !important;
 }
