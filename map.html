@@ -21,7 +21,7 @@
     <script>
         function initialize() {
 
-            var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+            var myCenter=new google.maps.LatLng(6.7968823,79.8995894);
             var mapProp = {
                 center:myCenter,
                 zoom:18,
@@ -242,12 +242,28 @@
             </div>
         </div>
 
+        <!-- Modal Structure Bottom Sheet -->
+        <div id="modal4" class="modal bottom-sheet">
+            <div class="modal-content choose-date">
+                <a href="#" ><p><i class="ion-ios-bell"></i>Ring my Wallet</p></a>
+                <a href="#" ><p><i class="icon ion-android-refresh"></i>Refresh Location</p></a>
+
+            </div>
+        </div>
+
         <!-- Main Content -->
         <div class="animated fadeinup">
 
             <div id="googleMap" style="width:400px;height:740px;"></div>
 
         </div> <!-- End of Main Contents -->
+
+        <!-- Floating Action Button -->
+        <div class="floating-button page-fab animated bouncein delay-3">
+            <a class="btn-floating btn-large waves-effect waves-light accent-color btn z-depth-1 modal-trigger" href="#modal4">
+                <i class="ion-ios-bell"></i>
+            </a>
+        </div>
 
 
     </div> <!-- End of Page Content -->
