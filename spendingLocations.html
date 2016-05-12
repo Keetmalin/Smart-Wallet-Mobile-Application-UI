@@ -21,14 +21,14 @@
     <script>
         function initialize() {
 
-            var myCenter=new google.maps.LatLng(51.508742,-0.120850);
-            var stavanger=new google.maps.LatLng(58.983991,5.734863);
-            var amsterdam=new google.maps.LatLng(52.395715,4.888916);
-            var london=new google.maps.LatLng(51.508742,-0.120850);
+            var myCenter=new google.maps.LatLng(6.7968823,79.8995894);
+            var location1=new google.maps.LatLng(6.7978278,79.9005);
+            var location2=new google.maps.LatLng(6.7958,79.8995894);
+            var location3=new google.maps.LatLng(6.7978278,79.8985);
 
             var mapProp = {
                 center:myCenter,
-                zoom:12,
+                zoom:15,
                 mapTypeId:google.maps.MapTypeId.ROADMAP
             };
             var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
@@ -40,7 +40,7 @@
 
             marker.setMap(map);
 
-            var myTrip=[stavanger,amsterdam,london,stavanger];
+            var myTrip=[location1,location2,location3,location1];
             var flightPath=new google.maps.Polygon({
                 path:myTrip,
                 strokeColor:"#0000FF",
